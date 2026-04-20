@@ -1,0 +1,50 @@
+/* app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    font-family: 'Inter', sans-serif;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white dark:bg-gray-900 transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .gradient-bg {
+    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+  }
+  .phone-frame {
+    background: linear-gradient(145deg, #1a1a2e, #0f0f1a);
+    border-radius: 55px;
+    box-shadow: 0 30px 50px -20px rgba(0,0,0,0.5), inset 0 0 0 4px rgba(255,255,255,0.05);
+  }
+  .phone-screen {
+    background: #0F172A;
+    border-radius: 45px;
+    overflow: hidden;
+    position: relative;
+  }
+  .status-bar {
+    background: linear-gradient(180deg, #0F172A 0%, #0F172A 100%);
+  }
+  .bottom-nav {
+    background: rgba(30, 41, 59, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(51, 65, 85, 0.5);
+  }
+  .account-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .account-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px -5px rgba(0,0,0,0.3);
+  }
+}
