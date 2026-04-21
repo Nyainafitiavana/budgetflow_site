@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import React from "react";
-import {Analytics} from "@vercel/analytics/vue";
+import {Analytics} from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
     title: 'BudgetFlow - Gérez votre budget simplement',
