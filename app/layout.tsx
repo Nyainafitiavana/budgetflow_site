@@ -1,7 +1,8 @@
-// app/layout.tsx
 import type { Metadata } from 'next';
 import './globals.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import React from "react";
+import {Analytics} from "@vercel/analytics/vue";
 
 export const metadata: Metadata = {
     title: 'BudgetFlow - Gérez votre budget simplement',
@@ -29,7 +30,8 @@ export default function RootLayout({
     return (
         <html lang="fr" suppressHydrationWarning>
         <body className="bg-white dark:bg-gray-900 transition-colors duration-300" suppressHydrationWarning>
-        {children}
+            {children}
+            <Analytics />
         </body>
         </html>
     );

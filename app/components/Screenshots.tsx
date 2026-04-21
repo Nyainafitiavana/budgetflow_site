@@ -1,4 +1,3 @@
-// components/Screenshots.tsx (alignement en bas)
 'use client';
 
 import Image from 'next/image';

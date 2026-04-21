@@ -1,4 +1,3 @@
-// components/PhoneMockup.tsx
 'use client';
 
 interface PhoneMockupProps {
