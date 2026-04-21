@@ -31,6 +31,7 @@ export default function Download({ language }: DownloadProps) {
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
                             href="https://drive.google.com/file/d/1DtlNVSZaxWAMrCx57MiERRGSaMGMHI-d/view?usp=sharing"
+                            target="_blank"
                             className="inline-flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-semibold text-lg transition shadow-lg"
                         >
                             <i className="fab fa-android text-2xl"></i>
