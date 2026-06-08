@@ -61,7 +61,7 @@ export default function Home() {
             />
             <Hero language={language} />
             <Features language={language} />
-            <Screenshots language={language} />
+            <Screenshots language={language} darkMode={darkMode} />
             <Stats language={language} />
             <Download language={language} />
             <Footer language={language} />

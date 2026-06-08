@@ -5,17 +5,19 @@ import { useState } from 'react';
 
 interface ScreenshotsProps {
     language: 'fr' | 'en';
+    darkMode: boolean;
 }
 
-export default function Screenshots({ language }: ScreenshotsProps) {
+export default function Screenshots({ language, darkMode }: ScreenshotsProps) {
     const [selectedImage, setSelectedImage] = useState<string | null>(null);
     const t = (fr: string, en: string) => (language === 'fr' ? fr : en);
+    const color = darkMode ? 'dark' : 'light';
 
     const screenshots = [
-        { nameFr: 'Tableau de bord', nameEn: 'Dashboard', image: '/images/dashboard.png', height: 350 },
-        { nameFr: 'Gestion des budgets', nameEn: 'Budgets', image: '/images/budget.png', height: 440 },
-        { nameFr: 'Historique', nameEn: 'History', image: '/images/history_transaction.png', height: 360 },
-        { nameFr: 'Comptes', nameEn: 'Accounts', image: '/images/accounts.png', height: 440 },
+        { nameFr: 'Tableau de bord', nameEn: 'Dashboard', image: `/images/dashboard_${color}_${language}.PNG`, height: 350 },
+        { nameFr: 'Gestion des budgets', nameEn: 'Budgets', image: `/images/budget_${color}_${language}.PNG`, height: 440 },
+        { nameFr: 'Historique', nameEn: 'History', image: `/images/history_${color}_${language}.PNG`, height: 360 },
+        { nameFr: 'Comptes', nameEn: 'Accounts', image: `/images/account_${color}_${language}.PNG`, height: 440 },
     ];
 
     return (

@@ -25,7 +25,7 @@ export default function Download({ language }: DownloadProps) {
                         {t('Prêt à gérer votre budget ?', 'Ready to manage your budget?')}
                     </h2>
                     <p className="text-gray-600 dark:text-gray-300 mb-8">
-                        {t('Téléchargez BudgetFlow gratuitement et commencez à économiser dès aujourd\'hui.', 'Download BudgetFlow for free and start saving today.')}
+                        {t('Téléchargez BudgetFlow et commencez à économiser dès aujourd\'hui.', 'Download BudgetFlow and start saving today.')}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a

@@ -14,8 +14,8 @@ export default function Stats({ language }: StatsProps) {
     const stats = [
         { value: '4+', labelFr: 'Écrans principaux', labelEn: 'Main Screens' },
         { value: '100%', labelFr: 'Hors ligne', labelEn: 'Offline' },
-        { value: 'Gratuit', labelFr: 'Sans publicité', labelEn: 'Ad-free' },
-        { value: 'Sécurisé', labelFr: 'Données locales', labelEn: 'Local data' },
+        { value: t('Licence à vie', 'Lifetime license'), labelFr: 'Sans publicité', labelEn: 'Ad-free' },
+        { value: t('Sécurisé', 'Secure'), labelFr: 'Données locales', labelEn: 'Local data' },
     ];
 
     return (

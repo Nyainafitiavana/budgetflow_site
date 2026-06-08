@@ -47,15 +47,15 @@ export default function Hero({ language }: HeroProps) {
                         <div className="flex flex-wrap gap-6 justify-center lg:justify-start mt-8">
                             <div className="flex items-center gap-2">
                                 <i className="fas fa-check-circle text-green-500"></i>
-                                <span className="text-gray-600 dark:text-gray-300">{t('Gratuit', 'Free')}</span>
+                                <span className="text-gray-600 dark:text-gray-300">100 % {t('Hors ligne', 'Offline')}</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <i className="fas fa-check-circle text-green-500"></i>
+                                <span className="text-gray-600 dark:text-gray-300">{t('Licence à vie', 'Lifetime license')}</span>
                             </div>
                             <div className="flex items-center gap-2">
                                 <i className="fas fa-check-circle text-green-500"></i>
                                 <span className="text-gray-600 dark:text-gray-300">{t('Sécurisé', 'Secure')}</span>
-                            </div>
-                            <div className="flex items-center gap-2">
-                                <i className="fas fa-check-circle text-green-500"></i>
-                                <span className="text-gray-600 dark:text-gray-300">{t('Hors ligne', 'Offline')}</span>
                             </div>
                         </div>
                     </div>
