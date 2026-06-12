@@ -29,7 +29,7 @@ export default function Download({ language }: DownloadProps) {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
-                            href="https://drive.google.com/file/d/1WvUf0jL00dF3sdQ6Lm7qz_-09Uj_TDaK/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/11izO3-z9QlAeELL3jofLCjn5Xk2AZ1bP/view?usp=drive_link"
                             target="_blank"
                             className="inline-flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-semibold text-lg transition shadow-lg"
                         >
